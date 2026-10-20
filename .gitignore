@@ -23,3 +23,4 @@ android/app/capacitor.build.gradle
 .idea/
 .vscode/*
 !.vscode/extensions.json
+.ideavo/project
