@@ -1,0 +1,27 @@
+{
+  "name": "modforge-hub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MODFORGE — responsive app & game modding hub UI with a sandboxed patch engine.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "lucide-react": "^1.60.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@vitejs/plugin-react": "5.1.1",
+    "rollup": "npm:@rollup/wasm-node@^4.64.12",
+    "tailwindcss": "4.1.17",
+    "vite": "7.3.2"
+  }
+}
