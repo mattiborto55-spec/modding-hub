@@ -16,7 +16,7 @@ const mods = [
     language: "Lua / C++",
     stars: "6.8k",
     likes: 128,
-    repo: "https://github.com/maximegmd/CyberEngineTweaks",
+    repo: "https://github.com/maximegmd/CyberEngineTweaks/releases/latest",
     accent: "lime",
   },
   {
@@ -31,7 +31,7 @@ const mods = [
     language: "C# / OpenGL",
     stars: "3.1k",
     likes: 94,
-    repo: "https://github.com/OpenSAGE/OpenSAGE",
+    repo: "https://github.com/OpenSAGE/OpenSAGE/releases/latest",
     accent: "blue",
   },
   {
@@ -46,7 +46,7 @@ const mods = [
     language: "C++ / Vulkan",
     stars: "11.4k",
     likes: 211,
-    repo: "https://github.com/doitsujin/dxvk",
+    repo: "https://github.com/doitsujin/dxvk/releases/latest",
     accent: "lime",
   },
   {
@@ -61,7 +61,7 @@ const mods = [
     language: "C++ / Lua",
     stars: "4.9k",
     likes: 167,
-    repo: "https://github.com/OpenMW/openmw",
+    repo: "https://openmw.org/downloads/",
     accent: "blue",
   },
   {
@@ -76,7 +76,7 @@ const mods = [
     language: "C / Wine",
     stars: "8.2k",
     likes: 183,
-    repo: "https://github.com/GloriousEggroll/proton-ge-custom",
+    repo: "https://github.com/GloriousEggroll/proton-ge-custom/releases/latest",
     accent: "lime",
   },
 ]
@@ -139,7 +139,7 @@ function ModCard({ mod, votes, isLiked, onUpvote }) {
     <div className="card-top"><div className="mod-icon">{mod.short}</div><div className="card-tags"><span className="platform-tag">{mod.platform}</span><span className={`status-tag ${mod.statusTone}`}><Check size={12} /> {mod.status}</span></div></div>
     <h3>{mod.title}</h3><p className="description">{mod.description}</p>
     <div className="card-details"><span>{mod.version}</span><span>{mod.language}</span><span><GitBranch size={13} /> {mod.stars}</span></div>
-    <div className="card-footer"><button className={isLiked ? "vote-button voted" : "vote-button"} onClick={onUpvote} aria-label={`Upvote ${mod.title}`}><ThumbsUp size={16} fill={isLiked ? "currentColor" : "none"} /> <span>{votes}</span></button><a className="download-button" href={mod.repo} target="_blank" rel="noreferrer">Download <Download size={15} /></a></div>
+    <div className="card-footer"><button className={isLiked ? "vote-button voted" : "vote-button"} onClick={onUpvote} aria-label={`Upvote ${mod.title}`}><ThumbsUp size={16} fill={isLiked ? "currentColor" : "none"} /> <span>{votes}</span></button><a className="download-button" href={mod.repo} target="_blank" rel="noopener noreferrer">Download <Download size={15} /></a></div>
   </article>
 }
 
